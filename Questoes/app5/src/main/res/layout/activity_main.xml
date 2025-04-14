@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9CBCB"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Faça seu pedido selecionando o tipo de pizza que desejar "
+        android:textColor="#D5320D"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"/>
+
+    <CheckBox
+        android:id="@+id/cbCalabresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calabresa (R$ 30,00)" />
+
+    <CheckBox
+        android:id="@+id/cbMarguerita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marguerita (R$ 25,00)" />
+
+    <CheckBox
+        android:id="@+id/cbPortuguesa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Portuguesa (R$ 35,00)" />
+
+    <TextView
+        android:id="@+id/textDesenvolvimento"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agora que você ja escolheu sua pizza vá para outra pagina escolher o tamanho e método de pagamento"
+        android:textColor="#D5320D"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#E90E0E"
+        android:text="Continuar" />
+
+
+</LinearLayout>

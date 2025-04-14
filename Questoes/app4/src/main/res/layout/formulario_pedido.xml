@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formulário de pedido"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinputNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu nome completo" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textEscolha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha seu lanche:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp" />
+
+    <!-- CheckBox Carne -->
+    <CheckBox
+        android:id="@+id/cbCarne2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lanche de carne (R$ 40,00)"
+        app:layout_constraintTop_toBottomOf="@id/textEscolha"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp" />
+
+    <!-- Imagem Carne -->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="@id/cbCarne2"
+        app:layout_constraintBottom_toBottomOf="@id/cbCarne2"
+        app:layout_constraintStart_toEndOf="@id/cbCarne2"
+        app:srcCompat="@drawable/carne" />
+
+    <!-- CheckBox Frango -->
+    <CheckBox
+        android:id="@+id/cbFrango"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lanche de frango (R$ 35,00)"
+        app:layout_constraintTop_toBottomOf="@id/cbCarne2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp" />
+
+    <!-- Imagem Frango -->
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="@id/cbFrango"
+        app:layout_constraintBottom_toBottomOf="@id/cbFrango"
+        app:layout_constraintStart_toEndOf="@id/cbFrango"
+        app:srcCompat="@drawable/frango" />
+
+    <!-- CheckBox Peixe -->
+    <CheckBox
+        android:id="@+id/cbCarne3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lanche de peixe (R$ 20,00)"
+        app:layout_constraintTop_toBottomOf="@id/cbFrango"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp" />
+
+    <!-- Imagem Peixe -->
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="@id/cbCarne3"
+        app:layout_constraintBottom_toBottomOf="@id/cbCarne3"
+        app:layout_constraintStart_toEndOf="@id/cbCarne3"
+        app:srcCompat="@drawable/peixe" />
+
+    <!-- Botão Continuar -->
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#DB5A2C"
+        android:text="Próxima página"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/cbCarne3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
